@@ -1,0 +1,22 @@
+{
+  "name": "weather-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vancomm/weather-bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vancomm/weather-bot/issues"
+  },
+  "homepage": "https://github.com/vancomm/weather-bot#readme",
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  }
+}
