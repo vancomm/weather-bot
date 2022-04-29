@@ -26,6 +26,10 @@ body {
 	font-size: 20px;
 }
 
+a {
+	text-decoration: none;
+}
+
 .grid {
 	display: grid;
 	place-items: center;
