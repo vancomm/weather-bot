@@ -5,7 +5,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "watch": "nodemon --ext *"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,10 @@
   },
   "homepage": "https://github.com/vancomm/weather-bot#readme",
   "devDependencies": {
+    "nodemon": "^2.0.15",
     "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "express": "^4.18.0"
   }
 }

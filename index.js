@@ -1,9 +1,17 @@
-import { createServer } from 'http';
+import { fileURLToPath } from 'url';
+import path, { dirname } from 'path';
+import express from "express";
+import { readFile } from "fs/promises";
 
-const requestListener = function (req, res) {
-	res.writeHead(200);
-	res.end('Hello, World!');
-}
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
-const server = createServer(requestListener);
-server.listen(8080);
+const app = express();
+
+app.use(express.static(__dirname + '/public'));
+
+app.get('/', async (req, res) => {
+	res.send(await readFile('./home.html', 'utf-8'));
+})
+
+app.listen(3000);
