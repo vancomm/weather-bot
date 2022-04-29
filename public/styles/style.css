@@ -38,3 +38,10 @@ a {
 .multicolor-animated {
 	animation: color-change 3s infinite;
 }
+
+.button {
+	background: linear-gradient(#E66465, #9198E5);
+	padding: 1rem;
+	color: white;
+	border-radius: .5em;
+}
