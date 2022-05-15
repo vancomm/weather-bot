@@ -5,7 +5,7 @@
   "type": "module",
   "main": "index.js",
   "bin": {
-    "server": "bin/server.js"
+    "weatherbot": "bin/server.js"
   },
   "scripts": {
     "start": "bin/server.js"
